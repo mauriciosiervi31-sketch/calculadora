@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .calc {
+            width: 220px;
+            margin: auto;
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-align: right;
+        }
+
+        button {
+            width: 45px;
+            height: 45px;
+            margin: 3px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Calculadora</h1>
+
+<div class="calc">
+    <!-- TELA -->
+    <input type="text" id="tela" disabled>
+
+    <!-- BOTÕES -->
+    <div>
+        <button onclick="numero(7)">7</button>
+        <button onclick="numero(8)">8</button>
+        <button onclick="numero(9)">9</button>
+        <button onclick="operador('/')">÷</button>
+    </div>
+
+    <div>
+        <button onclick="numero(4)">4</button>
+        <button onclick="numero(5)">5</button>
+        <button onclick="numero(6)">6</button>
+        <button onclick="operador('*')">×</button>
+    </div>
+
+    <div>
+        <button onclick="numero(1)">1</button>
+        <button onclick="numero(2)">2</button>
+        <button onclick="numero(3)">3</button>
+        <button onclick="operador('-')">−</button>
+    </div>
+
+    <div>
+        <button onclick="numero(0)">0</button>
+        <button onclick="limpar()">C</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="operador('+')">+</button>
+    </div>
+</div>
+
+<!-- ⚠️ SCRIPT TEM QUE SER A ÚLTIMA COISA -->
+<script src="exercicio2.js"></script>
+
+</body>
+</html>
